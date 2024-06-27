@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  .inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 10;
+  }
+  .wordspace{
+    font-size: 30px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+/* Reset default margin and padding */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Styles for the add_ticket_maincontainer */
+.main_boby_container {
+    width: 100%;
+    margin: 0px auto;
+    height: fit-content;
+   
+  
+   
+    padding: 0px; /* Adjust padding as needed */
+    
+}
+
+/* Styles for the add_ticket text */
+.add_ticket {
+    text-align: center;
+    line-height: 82.33px; 
+    /* Vertical centering */
+    background-color: rgba(118, 73, 179, 1);
+    color: #fff; /* Text color */
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 30px;
+}
+.ticket_type1 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.ticket_type2{
+    display: flex;
+    width: 100%;
+    margin-top: 0px;
+    
+}
+.eachboxticket{
+    width: 33.3%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+   
+    padding: 30px;
+
+}
+.eachboxticket label{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.eachboxticket input{
+    border-radius: 5px;
+    border: 1px solid rgba(225, 225, 225, 1);
+    height: 40px;
+    width: 100%;
+}
+.eachboxticket343 label{
+    margin-bottom: 5px;
+    font-size: 20px;
+}
+.eachboxticket343 input{
+    border-radius: 5px;
+    border: 1px solid rgba(225, 225, 225, 1);
+    height: 40px;
+    width: 100%;
+}
+.hidelabel{
+    margin-bottom: 5px;
+    font-size: 20px;
+    visibility: hidden;
+
+  
+}
+.subticket-btn {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    height: fit-content;
+    margin: 0 auto;
+}
+.subticket-btn button{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 60px;
+    background-color: rgba(255, 165, 0, 1);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 20px 30px;
+
+
+}
+.subticket-btn button:hover{
+    background-color: rgb(236, 167, 38);
+    cursor: pointer;
+
+}
+.eachboxticket2{
+    width: fit-content;
+    
+   
+    height: fit-content;
+   
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+   
+    padding: 30px;
+    
+}
+.subticket-btn2{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 33%;
+}
+.subticket-btn2 button{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 60px;
+    background-color: #EB5757;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 10px 30px;
+
+
+}
+.subticket-btn2 button:hover{
+    background-color: #e12e2e;
+    cursor: pointer;
+
+}
+.divAB {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+}
+.eachboxticket343{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 33%;
+    
+}
+.subticket-btn-last {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 90%;
+    margin: 0 auto;
+}
+.btr1 {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 60px;
+    background-color: #FFA500;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 30px 30px;
+
+
+}
+.btr1:hover{
+    background-color: #FFA500;
+    cursor: pointer;
+
+}
+.btr{
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 60px;
+    background-color: #C11F50;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 30px 30px;
+
+}
+.btr:hover{
+    background-color: #a10c38;
+    cursor: pointer;
+
+}
+input{
+    font-size: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+.ticket_type1 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.eachboxticket {
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0px;
+}
+.subticket-btn button {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 60px;
+    background-color: rgba(255, 165, 0, 1);
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.divAB {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    flex-direction: column;
+}
+.subticket-btn2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+.hidelabel {
+    margin-bottom: 5px;
+    font-size: 20px;
+    visibility: hidden;
+    display: none;
+}
+.subticket-btn2 button {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 60px;
+    background-color: #EB5757;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 10px 0px;
+}
+.eachboxticket343 {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+}
+.subticket-btn-last {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    margin: 0 auto;
+}
+.btr1 {
+    width: 100px;
+    height: fit-content;
+    padding: 10px 10px;
+    background-color: #FFA500;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 30px 10px;
+}
+.btr {
+    width: 100px;
+    height: fit-content;
+    padding: 10px 10px;
+    background-color: #C11F50;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 4px;
+    font-size: 20px;
+    margin: 30px 10px;
+}
+input{
+    font-size: 16px;
+
+}
+
+}
