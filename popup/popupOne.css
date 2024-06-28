@@ -46,7 +46,7 @@ body, html {
 /* Styles for the add_ticket text */
 .add_ticket {
     text-align: center;
-    line-height: 82.33px; 
+    line-height: 64px; 
     /* Vertical centering */
     background-color: rgba(118, 73, 179, 1);
     color: #fff; /* Text color */
@@ -73,12 +73,12 @@ body, html {
     justify-content: center;
     flex-direction: column;
    
-    padding: 30px;
+  
 
 }
 .eachboxticket label{
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: 18px;
 }
 .eachboxticket input{
     border-radius: 5px;
@@ -114,7 +114,7 @@ body, html {
 .subticket-btn button{
     width: fit-content;
     height: fit-content;
-    padding: 10px 60px;
+    padding: 8px 30px;
     background-color: rgba(255, 165, 0, 1);
     color: white;
     font-weight: 600;
@@ -153,12 +153,12 @@ body, html {
 .subticket-btn2 button{
     width: fit-content;
     height: fit-content;
-    padding: 10px 60px;
+    padding: 12px 32px;
     background-color: #EB5757;
     color: white;
     font-weight: 600;
     border: none;
-    border-radius: 4px;
+    border-radius: 12px;
     font-size: 20px;
     margin: 10px 30px;
 
@@ -192,7 +192,7 @@ body, html {
 .btr1 {
     width: fit-content;
     height: fit-content;
-    padding: 10px 60px;
+    padding: 8px 30px;
     background-color: #FFA500;
     color: white;
     font-weight: 600;
@@ -211,7 +211,7 @@ body, html {
 .btr{
     width: fit-content;
     height: fit-content;
-    padding: 10px 60px;
+    padding: 8px 30px;
     background-color: #C11F50;
     color: white;
     font-weight: 600;
