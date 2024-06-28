@@ -90,7 +90,7 @@ body {
 
 }
 .navigation button:hover {
-    background-color: #003f7f;
+    background-color: rgba(62, 32, 72, 1);
   color: white;
     
     
@@ -603,10 +603,21 @@ h1 {
 }
 
 
-
-
-
-
+.buy_regbutton {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 15px;
+    width: fit-content;
+    text-align: center;
+    transition: background-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .buy_regbutton:hover {
+    background-color: darkred;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+  }
+  
 
 
 
@@ -931,7 +942,7 @@ font-size: 15px;
     width: 100%;
     color: white;
     float: right;
-    font-size: 35px;
+    font-size: 45px;
   
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -947,3 +958,6 @@ font-size: 15px;
     text-decoration: none;
     cursor: pointer;
 }
+
+
+/* /////////// */

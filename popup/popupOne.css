@@ -45,13 +45,14 @@ body, html {
 
 /* Styles for the add_ticket text */
 .add_ticket {
-    text-align: center;
-    line-height: 64px; 
+  text-align: center;
+    
     /* Vertical centering */
     background-color: rgba(118, 73, 179, 1);
     color: #fff; /* Text color */
-    font-size: 24px; /* Adjust font size as needed */
+    font-size: large; /* Adjust font size as needed */
     margin-bottom: 30px;
+   
 }
 .ticket_type1 {
     display: flex;
@@ -78,7 +79,7 @@ body, html {
 }
 .eachboxticket label{
     margin-bottom: 5px;
-    font-size: 18px;
+    font-size: medium;
 }
 .eachboxticket input{
     border-radius: 5px;
@@ -88,7 +89,7 @@ body, html {
 }
 .eachboxticket343 label{
     margin-bottom: 5px;
-    font-size: 20px;
+    font-size: medium;
 }
 .eachboxticket343 input{
     border-radius: 5px;
@@ -119,8 +120,8 @@ body, html {
     color: white;
     font-weight: 600;
     border: none;
-    border-radius: 4px;
-    font-size: 20px;
+    border-radius: 10px;
+    font-size: medium;
     margin: 20px 30px;
 
 
@@ -159,8 +160,8 @@ body, html {
     font-weight: 600;
     border: none;
     border-radius: 12px;
-    font-size: 20px;
-    margin: 10px 30px;
+    font-size: medium;
+    margin: -4px 30px;
 
 
 }
@@ -193,12 +194,12 @@ body, html {
     width: fit-content;
     height: fit-content;
     padding: 8px 30px;
-    background-color: #FFA500;
+    background-color: rgb(236, 167, 38);;
     color: white;
     font-weight: 600;
     border: none;
-    border-radius: 4px;
-    font-size: 20px;
+    border-radius: 10px;
+    font-size: medium;
     margin: 30px 30px;
 
 
@@ -216,8 +217,8 @@ body, html {
     color: white;
     font-weight: 600;
     border: none;
-    border-radius: 4px;
-    font-size: 20px;
+    border-radius: 10px;
+    font-size: medium;
     margin: 30px 30px;
 
 }
@@ -275,7 +276,7 @@ input{
     font-weight: 600;
     border: none;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: medium;
     margin: 20px 0px;
 }
 .divAB {
@@ -299,13 +300,13 @@ input{
 .subticket-btn2 button {
     width: fit-content;
     height: fit-content;
-    padding: 10px 60px;
+    padding: 10px 32px;
     background-color: #EB5757;
     color: white;
     font-weight: 600;
     border: none;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: medium;
     margin: 10px 0px;
 }
 .eachboxticket343 {
@@ -332,7 +333,7 @@ input{
     font-weight: 600;
     border: none;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: medium;
     margin: 30px 10px;
 }
 .btr {
@@ -344,7 +345,7 @@ input{
     font-weight: 600;
     border: none;
     border-radius: 4px;
-    font-size: 20px;
+    font-size: medium;
     margin: 30px 10px;
 }
 input{
