@@ -161,7 +161,7 @@ body, html {
     border: none;
     border-radius: 12px;
     font-size: medium;
-    margin: -4px 30px;
+    margin: 10px 30px;
 
 
 }
@@ -300,7 +300,7 @@ input{
 .subticket-btn2 button {
     width: fit-content;
     height: fit-content;
-    padding: 10px 32px;
+    padding: 10px 60px;
     background-color: #EB5757;
     color: white;
     font-weight: 600;
