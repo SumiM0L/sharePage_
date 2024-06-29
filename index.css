@@ -4,7 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 .poppins-medium {
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    
     font-style: normal;
   }
   .inter {
@@ -65,16 +65,17 @@ body {
 .navigation button {
     display: flex;
     align-items: center;
-    
-    color: "rgba(71, 84, 103, 1)";
+    color: rgba(71, 84, 103, 1);
+    font-size: 18px;
+    font-weight: 600;
     border: none;
     border-radius: 5px;
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: poppins;
    
-    font-size: 14px;
-    font-weight: 600;
+   
 }
 
 .navigation button img {
@@ -85,26 +86,18 @@ body {
 
 }
 
-.navigation button:hover img {
-    filter: invert(1);
 
-}
-.navigation button:hover {
-    background-color: rgba(62, 32, 72, 1);
-  color: white;
-    
-    
-}
+
 
 
 .calender-session {
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 200px;
+    justify-content: flex-start;
+    width: 273px;
     height: 45px;
     gap: 14px;
-    background-color: rgba(62, 32, 72, 1);
+    
     border-radius: 8px;
     opacity: 1; /* Set opacity to 1 to make it visible */
     color: white;
@@ -127,6 +120,7 @@ body {
     flex-direction: column;
     padding-right: 20px; /* Add padding for spacing between left and right sections */
     width: 50%;
+    font-family: poppins;
     
 }
 
@@ -138,8 +132,8 @@ body {
 
 .card-profile {
     background-color: rgba(231, 231, 231, 0.38);
-    padding: 20px;
-    border-radius: 8px;
+    padding: 30px;
+    border-radius: 24px;
     position: relative;
     width: 50%;
     max-width: 400px; /* Limit the maximum width of the card */
@@ -192,6 +186,8 @@ body {
     background-color: rgba(118, 73, 179, 0.14);
     border-radius: 40px;
     padding: 10px 15px;
+    font-size: 16px;
+    font-weight: 400px;
 }
 .followers {
     position: absolute;
@@ -216,7 +212,7 @@ body {
     height: fit-content;
    
     border-radius: 20px;
-    background-color: #003f7f;
+    background-color: rgba(129, 1, 39, 1);
     color: white;
     display: flex;
     align-items: center;
@@ -247,7 +243,7 @@ ol {
     margin: 0 auto;
     padding: 30px;
    
-    background-color: rgba(231, 231, 231, 0.38);
+    background-color: rgba(246, 246, 246, 1);
     border-radius: 18px;
     opacity: 1;
     display: flex;
@@ -336,7 +332,8 @@ ol {
     display: flex;
     list-style-type: none;
     padding: 0;
-    color: rgba(102, 112, 133, 1);
+
+ font-weight: 400;
     margin-top: 50px;
 }
 
@@ -351,13 +348,13 @@ ol {
 
 .tabs li.active {
     background-color: rgba(118, 73, 179, 0.14);
-    color: rgba(118, 73, 179, 1);
+    color: rgba(154, 52, 82, 1);
     border-radius: 12px;
 }
 
 .tab-content {
     display: none;
-    padding: 20px;
+    padding: 30px;
      margin-top: -1px;
     background-color: rgba(231, 231, 231, 0.38);
     border-radius:12px ;
@@ -465,7 +462,13 @@ ol {
 .form-labels, .form-inputs {
     width: 48%;
 }
+.form-inputs{
+    border:1px solid rgba(177, 177, 177, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 12px;
+    padding: 20px;
 
+}
 .form-group {
     margin-bottom: 20px;
 }
@@ -485,6 +488,7 @@ label i {
     margin-top: 10px;
     margin-bottom: 5px;
     font-weight: normal;
+
 }
 
 input {
@@ -495,14 +499,34 @@ input {
     padding: 15px;
     border-radius: 12px;
     border: none;
+    border:1px solid rgba(177, 177, 177, 1);
+   
 }
 .textarea{
     resize: none;
-    width: 100%;
+    width: 99%;
    height: 10rem;
     border-radius: 12px;
     border: none;
+    border:1px solid rgba(177, 177, 177, 1);
 
+}
+.contact_button{
+    width: fit-content;
+    height: fit-content;
+   
+    border-radius: 24px;
+    background-color: rgba(129, 1, 39, 1);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-bottom: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inter;
 }
 
 /* tab  Content for Featuring ended */
@@ -566,17 +590,45 @@ h1 {
 .event-card {
     width: calc(23% - 20px); /* Adjusted to account for margins */
     margin-bottom: 20px;
- 
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     box-sizing: border-box; /* Ensure padding and border are included in width */
+    overflow: hidden; /* Ensure children respect border radius */
 }
-.eventcard-content{
+
+.event-card:hover {
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 0.125em 0.125em, rgba(0, 0, 0, 0.3) 0px 0.25em 1em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+}
+
+.eventcard-content {
     padding: 10px;
 }
+.event-bottom-info {
+    width: 100%;
+    background-color: rgba(241, 242, 243, 1);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.event-bottom-info p {
+ 
+   
+   
+    color: rgba(154, 52, 82, 1);
+    padding: 10px;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.event-bottom-info p span {
+    color: rgba(71, 84, 103, 1);
+}
+
+
+
 .event-card img {
     max-width: 100%; /* Ensure images don't exceed their container width */
     height: auto;
@@ -604,19 +656,25 @@ h1 {
 
 
 .buy_regbutton {
-    background-color: red;
+ 
     color: white;
     padding: 10px;
-    border-radius: 15px;
-    width: fit-content;
+    border-radius: 54px;
+    width: 125px;
     text-align: center;
     transition: background-color 0.3s, box-shadow 0.3s;
+    border :1px solid rgba(154, 52, 82, 1);
+    font-size: 14px; 
+    color: rgba(154, 52, 82, 1);
+    text-align: center; 
+    cursor: pointer;
+    margin-bottom: 35px;
   }
   
-  .buy_regbutton:hover {
+  /* .buy_regbutton:hover {
     background-color: darkred;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-  }
+  } */
   
 
 
@@ -684,6 +742,7 @@ h1 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    
 }
 .navigation-container {
     width: 100%;
@@ -829,17 +888,8 @@ h1{
     box-sizing: border-box;
     margin: 10px auto;
 }
-.event-details-section h1 {
-    display: flex;
-    color: rgba(0, 0, 0, 1);
-    font-size: 15px;
-}
-p{
-    font-size: 15px;
-}
-li{
-font-size: 15px;
-}
+
+
 .content-container {
     display: flex;
     justify-content: center;
@@ -891,17 +941,7 @@ font-size: 15px;
 .dronetext {
     padding: 0px 0px;
 }
-.card-profile {
-    background-color: rgba(231, 231, 231, 0.38);
-    padding: 20px;
-    border-radius: 8px;
-    position: relative;
-    width: 90%;
-    max-width: 400px;
-    font-family: Arial, sans-serif;
-    margin-left: auto;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-}
+
 .attendees {
     background-color: rgba(118, 73, 179, 0.14);
     border-radius: 40px;
@@ -910,54 +950,65 @@ font-size: 15px;
 }
 }
   
-
-
-
-
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-   
-    
-    width: 100%; /* Full width */
-    height: fit-content;
- 
-    
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Increased opacity for more pronounced black overlay */
+    z-index: 999;
+    overflow: auto;
 }
 
-/* popup Modal Content */
+
+
+/* Modal Content */
 .modal-content {
     background-color: #fefefe;
-   
-    
-    
-    width: 85%; /* Could be more or less, depending on screen size */
-    height: 700px; /* Adjust as needed */
+    width: 85%;
+    max-width: 635px; /* Adjust max-width as needed */
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    position: relative;
+    margin: 10% auto;
+    padding: 20px;
 }
 
-/* The Close Button */
-.close {
-    width: 100%;
-    color: white;
-    float: right;
-    font-size: 45px;
-  
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color:rgba(118, 73, 179, 1);
+/* Modal Header */
+.modal-header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    background-color: rgba(118, 73, 179, 1);
+    width: 100%;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
 }
 
+.modal-title {
+    text-align: center;
+    font-size: 26px;
+    font-weight: 600;
+    font-family: poppins;
+    color: white;
+    flex-grow: 1; /* Allow title to expand to fill space */
+    margin: 0; /* Remove default margin */
+    padding: 10px; /* Add padding for spacing */
+}
+
+.close {
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px;
+}
 
 .close:hover,
 .close:focus {
-    color: white;
     text-decoration: none;
-    cursor: pointer;
 }
-
-
-/* /////////// */
