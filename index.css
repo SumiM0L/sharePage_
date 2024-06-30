@@ -1084,3 +1084,21 @@ h1{
         gap: 10px; /* Reduce gap within columns for better fit on very small screens */
     }
 }
+
+/* Seating Layout */
+#tab-seating {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.file-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.uploaded-text {
+    margin-top: 10px; /* Adjust as needed for spacing */
+    font-size: 22px; font-weight: 600; color: rgba(102, 112, 133, 1)
+}
