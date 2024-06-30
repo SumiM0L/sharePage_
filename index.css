@@ -1016,20 +1016,22 @@ h1{
 .column {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px; /* Equal gap between items in a column */
+    width: 100%; /* Ensure each column takes the full width */
 }
 
 .row {
     display: flex;
     flex-direction: row;
     width: 100%; /* Ensures the row takes up full width */
-    gap: 20px;
+    gap: 20px; /* Equal gap between columns */
+    margin-bottom: 20px; /* Equal gap between rows */
 }
 
 .heading {
     font-weight: 500;
-    font-size: 22px;
-    font-family: poppins;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .content {
@@ -1037,15 +1039,48 @@ h1{
     padding-left: 10px;
     font-weight: 400;
     font-size: 14px;
-    font-family: poppins;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    width: 100%; /* Ensure each column takes the full width */
+    font-family: 'Poppins', sans-serif;
 }
 
 .tab-content.poppins-medium {
     font-family: 'Poppins', sans-serif; /* Ensures the Poppins font is applied */
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column; /* Stack columns on smaller screens */
+    }
+
+    .column {
+        width: 100%; /* Ensure each column takes the full width on smaller screens */
+    }
+
+    .heading {
+        font-size: 18px; /* Adjust heading font size for smaller screens */
+    }
+
+    .content {
+        font-size: 12px; /* Adjust content font size for smaller screens */
+        padding-left: 0; /* Remove padding on smaller screens for better fit */
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 16px; /* Further adjust heading font size for very small screens */
+    }
+
+    .content {
+        font-size: 10px; /* Further adjust content font size for very small screens */
+    }
+
+    .row {
+        gap: 10px; /* Reduce gap between rows for better fit on very small screens */
+        margin-bottom: 10px; /* Adjust row margin for very small screens */
+    }
+
+    .column {
+        gap: 10px; /* Reduce gap within columns for better fit on very small screens */
+    }
 }
