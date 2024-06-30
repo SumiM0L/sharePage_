@@ -1012,3 +1012,40 @@ h1{
 .close:focus {
     text-decoration: none;
 }
+/* specification */
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 100%; /* Ensures the row takes up full width */
+    gap: 20px;
+}
+
+.heading {
+    font-weight: 500;
+    font-size: 22px;
+    font-family: poppins;
+}
+
+.content {
+    flex: 1;
+    padding-left: 10px;
+    font-weight: 400;
+    font-size: 14px;
+    font-family: poppins;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Ensure each column takes the full width */
+}
+
+.tab-content.poppins-medium {
+    font-family: 'Poppins', sans-serif; /* Ensures the Poppins font is applied */
+}
