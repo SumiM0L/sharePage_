@@ -1086,11 +1086,7 @@ h1{
 }
 
 /* Seating Layout */
-#tab-seating {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
+
 
 .file-wrapper {
     display: flex;
@@ -1100,5 +1096,5 @@ h1{
 
 .uploaded-text {
     margin-top: 10px; /* Adjust as needed for spacing */
-    font-size: 22px; font-weight: 600; color: rgba(102, 112, 133, 1)
+    font-size: 20px; font-weight: 600; color: rgba(102, 112, 133, 1)
 }
