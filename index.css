@@ -1036,7 +1036,7 @@ h1{
 
 .content {
     flex: 1;
-    padding-left: 10px;
+ 
     font-weight: 400;
     font-size: 14px;
     font-family: 'Poppins', sans-serif;
@@ -1096,5 +1096,6 @@ h1{
 
 .uploaded-text {
     margin-top: 10px; /* Adjust as needed for spacing */
-    font-size: 20px; font-weight: 600; color: rgba(102, 112, 133, 1)
+    font-size: 20px; font-weight: 600; color: rgba(102, 112, 133, 1);
+    font-family: poppins;
 }
