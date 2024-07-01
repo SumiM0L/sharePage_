@@ -11,9 +11,9 @@
 
     <div class="main-container">
     <div class="content-container">
-        <div class="image-container">
+        
             <img src="images/bannerimage.png" class="imgsrc" alt="Example Image">
-        </div>
+       
        
     </div>
     <div class="navigation-container poppins-medium">
@@ -105,7 +105,7 @@
             <div>
                 <h1>Location</h1>
                 <div class="details">
-                    <div><img src="images/location.png" alt="location-icon"></div>
+                    <div><img src="images/location.png" class="lg" alt="location-icon"></div>
                     <div style="font-family: poppins;font-weight: 400;font-size: 18px;">228 Abbott Street Vancouver, BC V6B 1C8 Canada</div>
                 </div>
             </div>
@@ -142,7 +142,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <div class="modal-title">Add a Ticket</div>
-                    <span class="close">&times;</span>
+                    <span><img src="images/closeicon.png" class="close" alt="close"></span>
                 </div>
                 <form class="main_boby_container">
                     <div class="ticket_type1 poppins-medium">
@@ -224,14 +224,18 @@
     
     
     <!-- tab session -->
-    <ul class="tabs poppins-medium">
-        <li class="tab-link active" data-tab="tab-gallery">Gallery</li>
-        <li class="tab-link" data-tab="tab-video">Video Gallery</li>
-        <li class="tab-link" data-tab="tab-specification">Featuring</li>
-        <li class="tab-link" data-tab="tab-organizer">Contact Organizer</li>
-        <li class="tab-link" data-tab="tab-featuring">Specification</li>
-        <li class="tab-link" data-tab="tab-seating">Seating Layout</li>
-    </ul>
+    <div class="tabs-container">
+        <ul class="tabs poppins-medium">
+            <li class="tab-link active" data-tab="tab-gallery">Gallery</li>
+            <li class="tab-link" data-tab="tab-video">Video Gallery</li>
+            <li class="tab-link" data-tab="tab-specification">Featuring</li>
+            <li class="tab-link" data-tab="tab-organizer">Contact Organizer</li>
+            <li class="tab-link" data-tab="tab-featuring">Specification</li>
+            <li class="tab-link" data-tab="tab-seating">Seating Layout</li>
+        </ul>
+    </div>
+    
+    <!-- tabgallery -->
     
     <div id="tab-gallery" class="tab-content active poppins-medium">
         <div class="card-row">
@@ -277,9 +281,8 @@
             </div>
         </div>
     </div>
-    
-    <!-- Add similar markup for other tab content sections if needed -->
-    
+
+   <!-- tab video -->
     
     <div id="tab-video" class="tab-content poppins-medium">
         <div class="video-container">
@@ -365,21 +368,23 @@
         
     </div>
 
+    <!-- taborganizer -->
+
     <div id="tab-organizer" class="tab-content poppins-medium">
         <form id="featuring-form">
             <div class="form-row">
                 <div class="form-labels">
                     <div class="form-group">
                         <label    for="organizer-name"><i class="icon-user">  <img src="images/profile-user.png" alt="profileicon"></i> Organizer Name</label>
-                        <p style="font-weight: 400;">CICA Vancouver</p>
+                        <p class="tex" style="font-weight: 400;">CICA Vancouver</p>
                     </div>
                     <div class="form-group">
                         <label for="organizer-phone"><i class="icon-phone">  <img src="images/profile-phone.png" alt="profilephoneicon"></i> Organizer Phone</label>
-                        <p style="font-weight: 400;">https://cicavancouver.com/</p>
+                        <p class="tex" style="font-weight: 400;">https://cicavancouver.com/</p>
                     </div>
                     <div class="form-group">
                         <label for="organizer-email"><i class="icon-email"> <img src="images/profile-email.png" alt="profileemailicon"></i> Organizer Email</label>
-                        <p style="font-weight: 400;">n/a</p>
+                        <p class="tex" style="font-weight: 400;">n/a</p>
                     </div>
                 </div>
                 <div class="form-inputs">
@@ -405,7 +410,7 @@
         </form>
     </div>
 
-   
+   <!-- tabfeaturing -->
  
     <div id="tab-featuring" class="tab-content poppins-medium">
         <div class="row">
@@ -451,10 +456,11 @@
     </div> </div>
     </div>
     
+    <!-- tab-specification -->
 
     <div id="tab-specification" class="tab-content poppins-medium">
         <!-- first row -->
-        <div style="display: flex;" class="quot">
+        <div  class="quot">
             <div class="profile-view">
                 
                 <div class="card-profile poppins-medium">
@@ -521,9 +527,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+       
         <!-- secondrow -->
-        <div style="display: flex;" class="quot">
+       
             <div class="profile-view">
                 
                 <div class="card-profile poppins-medium">
@@ -590,9 +596,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
         <!-- third row -->
-        <div style="display: flex;" class="quot">
+       
             <div class="profile-view">
                 
                 <div class="card-profile poppins-medium">
