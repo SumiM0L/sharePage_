@@ -35,7 +35,7 @@ body {
     color: #333;
    
 }.main-container{
-    width: 80%;
+    width: 92%;
     margin: 0 auto;
 }
 
@@ -52,38 +52,33 @@ body {
     display: flex;
     justify-content: flex-end; /* Align navigation to the right */
     align-items: center;
-    /* flex-grow: 1; */
-  
+    font-family: poppins;
+    margin-bottom: 30px;
 }
 
 .navigation {
     display: flex;
-    gap: 10px; /* Space between buttons */
-  
+    gap: 20px; /* Space between navigation items */
+    align-items: center;
 }
 
-.navigation button {
+.navigation p {
     display: flex;
+    font-family: poppins;
     align-items: center;
     color: rgba(71, 84, 103, 1);
     font-size: 18px;
     font-weight: 600;
-    border: none;
-    border-radius: 5px;
+    margin: 0; /* Remove default margin */
     padding: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    font-family: poppins;
-   
-   
 }
 
-.navigation button img {
+.navigation p img {
     margin-right: 10px;
     width: 20px;
     height: 20px;
-    
-
 }
 
 
@@ -119,8 +114,9 @@ body {
     display: flex;
     flex-direction: column;
     padding-right: 20px; /* Add padding for spacing between left and right sections */
-    width: 50%;
+    width: 43%;
     font-family: poppins;
+    justify-content: end;
     
 }
 
@@ -131,25 +127,28 @@ body {
 }
 
 .card-profile {
-    background-color: rgba(231, 231, 231, 0.38);
-    padding: 30px;
+    background-color: rgba(231, 231, 231, 0.44);
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    padding: 10px;
     border-radius: 24px;
     position: relative;
-    width: 50%;
-    max-width: 400px; /* Limit the maximum width of the card */
-    font-family: poppins;
+    
+    gap: 0px;
+    opacity: 1;
+    max-width: 513.51px; /* Limit the maximum width of the card */
+    font-family: 'Poppins Medium', sans-serif;
     margin-left: auto; /* Align the card to the right */
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 }
 
-.followers {
+.follower {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-color: white;
-    border-radius: 16px;
+    
     padding: 5px 10px;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .profile-section {
@@ -159,8 +158,8 @@ body {
 }
 
 .profile-icon {
-    width: 50px;
-    height: 50px;
+    width: 70px;
+    height: 65px;
     border-radius: 50%;
     overflow: hidden; /* Ensures the image stays within the circle */
 }
@@ -179,58 +178,42 @@ body {
 }
 
 .profile-details div {
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .attendees {
-    background-color: rgba(118, 73, 179, 0.14);
-    border-radius: 40px;
-    padding: 10px 15px;
+    
     font-size: 16px;
-    font-weight: 400px;
-}
-.followers {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background-color: white;
-    border-radius: 16px;
-    padding: 5px 10px;
-    font-size: 14px;
-}
-.btncls{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-  
-
+    font-weight: 400;
 }
 
 .button-follow {
-    width: fit-content;
-    height: fit-content;
-   
-    border-radius: 20px;
-    background-color: rgba(129, 1, 39, 1);
-    color: white;
     display: flex;
+    justify-content: flex-end; /* Align buttons to the right */
     align-items: center;
-    justify-content: center;
-    cursor: pointer;
-    padding: 10px 15px;
-    margin-bottom: 5px;
+    margin-top: 20px; /* Separate from profile section */
 }
 
+.button-follow img {
+    margin-left: 10px; /* Space between icons */
+    cursor: pointer;
+}
 .event-details {
     display: flex;
-    margin-top: 50px;
+    margin-top: 10px;
 }
 .detail-session {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* This ensures each line starts from the left */
+    align-items: flex-start;
     font-size: 20px;
+    padding: 0px 30px 0px 0px;
+    width: 118%;
+}
+.event_image{
+    height: 670px;
+    width: 50%;
+    
 }
 ol {
     list-style-type: disc;
@@ -238,14 +221,14 @@ ol {
     padding-left: 20px; /* Add some padding to align the content */
 }
 .event-details-container {
-    width: 100%;
+   
    
     margin: 0 auto;
     padding: 30px;
    
     background-color: rgba(246, 246, 246, 1);
     border-radius: 18px;
-    opacity: 1;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -281,9 +264,7 @@ ol {
 .showinmob{
     display: none;
 }
-.hideinmob{
-    padding: 20px;
-}
+
 .subtab{
     margin-bottom: 50px;
 }
@@ -893,8 +874,9 @@ h1{
 .content-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding: 0px;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
 }
 .navigation-container {
     width: 100%;
