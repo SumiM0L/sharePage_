@@ -893,7 +893,7 @@ h1 {
 
 
 h1 {
-    color: #0056b3;
+    
     margin-top: 40px; /* Add some margin to separate the heading from the content */
 }
 .main-container {
@@ -932,14 +932,14 @@ h1 {
     width: 200px;
     height: 45px;
     gap: 14px;
-    background-color: rgba(62, 32, 72, 1);
+    
     border-radius: 8px;
     opacity: 1;
     color: white;
     margin: 20px;
 }
 h1 {
-    color: #0056b3;
+   
     margin-top: 40px;
     padding: 0px 20px;
 }
@@ -970,7 +970,7 @@ h1 {
     padding: 20px;
 }
 h1{
-    color: blueviolet;
+    
     margin: 0;
     font-size: 28px;
     padding: 0px;
@@ -1156,7 +1156,7 @@ h1{
         width: fit-content;
         height: 45px;
         gap: 14px;
-        background-color: rgba(62, 32, 72, 1);
+        
         border-radius: 8px;
         opacity: 1;
         color: white;
