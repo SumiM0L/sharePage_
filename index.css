@@ -155,7 +155,7 @@ body {
 
 .profile-section {
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     margin-top: 40px;
 }
 
@@ -383,13 +383,17 @@ ol {
 
 .similar_text{
     color: rgba(0, 0, 0, 1);
-     font-size: 22px;font-weight: 600;
+     font-size: 22px;
+     font-weight: 600;
      font-family: poppins;
 }
 
 
 .uploaded-text{
-    font-size: 20px; font-weight: 600; color: rgba(102, 112, 133, 1);font-family: poppins;
+    font-size: 20px; 
+    font-weight: 600; 
+    color: rgba(102, 112, 133, 1);
+    font-family: poppins;
 }
 
 
@@ -681,8 +685,8 @@ h1 {
     height: fit-content;
    
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    /* align-items: center; */
+    justify-content: space-evenly;
     flex-wrap: wrap;
   }
   .card-profile {
@@ -1117,6 +1121,7 @@ h1{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
 }
 .left-session {
     padding: 10px;
@@ -1346,9 +1351,7 @@ label i {
 .tabs{
     width: max-content;
 }
-.tab-contentz{
-    display: flex;
-}
+
 .file-wrapper{
     display: flex;justify-content: space-around;align-items: center;
     flex-direction: column;
@@ -1360,7 +1363,8 @@ label i {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: nowrap
+    flex-wrap: nowrap;
+    
   }
 
 }
