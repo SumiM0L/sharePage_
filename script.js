@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       // Hide all tab contents except the corresponding one
       tabContents.forEach((content) => {
         if (content.id === tabId) {
-          content.style.display = "block";
+          content.style.display = "contents";
         } else {
           content.style.display = "none";
         }

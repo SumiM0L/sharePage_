@@ -240,46 +240,90 @@
     <div id="tab-gallery" class="tab-content active poppins-medium">
         <div class="card-row">
             <div class="card">
-                <img src="images/image1.jpg" alt="Image 1">
+                <img src="images/image1.jpg" alt="Image 1" onclick="openSlideshow(1)">
             </div>
             <div class="card">
-                <img src="images/image2.jpg.png" alt="Image 2">
+                <img src="images/image12.jpg.png" alt="Image 2" onclick="openSlideshow(2)">
             </div>
             <div class="card">
-                <img src="images/image3.jpg.png" alt="Image 3">
+                <img src="images/image3.jpg.png" alt="Image 3" onclick="openSlideshow(3)">
             </div>
             <div class="card">
-                <img src="images/image4.jpg.png" alt="Image 4">
+                <img src="images/image4.jpg.png" alt="Image 4" onclick="openSlideshow(4)">
             </div>
         </div>
         <div class="card-row">
             <div class="card">
-                <img src="images/image5.jpg.png" alt="Image 5">
+                <img src="images/image5.jpg.png" alt="Image 5" onclick="openSlideshow(5)">
             </div>
             <div class="card">
-                <img src="images/image6.jpg.png" alt="Image 6">
+                <img src="images/image6.jpg.png" alt="Image 6" onclick="openSlideshow(6)">
             </div>
             <div class="card">
-                <img src="images/image7.jpg.png" alt="Image 7">
+                <img src="images/image7.jpg.png" alt="Image 7" onclick="openSlideshow(7)">
             </div>
             <div class="card">
-                <img src="images/image8.jpg.png" alt="Image 8">
+                <img src="images/image8.jpg.png" alt="Image 8" onclick="openSlideshow(8)">
             </div>
         </div>
         <div class="card-row">
             <div class="card">
-                <img src="images/image9.jpg.png" alt="Image 9">
+                <img src="images/image9.jpg.png" alt="Image 9" onclick="openSlideshow(9)">
             </div>
             <div class="card">
-                <img src="images/image10.jpg.png" alt="Image 10">
+                <img src="images/image10.jpg.png" alt="Image 10" onclick="openSlideshow(10)">
             </div>
             <div class="card">
-                <img src="images/image11.jpg.png" alt="Image 11">
+                <img src="images/image11.jpg.png" alt="Image 11" onclick="openSlideshow(11)">
             </div>
             <div class="card">
-                <img src="images/image12.jpg.png" alt="Image 12">
+                <img src="images/image12.jpg.png" alt="Image 12" onclick="openSlideshow(12)">
             </div>
         </div>
+    </div>
+    
+    <div class="slideshow-overlay" id="slideshow-overlay" onclick="closeSlideshow()"></div>
+    <div class="slideshow-container" id="slideshow-container">
+        <span class="closeside " onclick="closeSlideshow()">&times;</span>
+        <div class="mySlides fade">
+            <img src="images/image1.jpg." style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image2.jpg.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image3.jpg.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image4.jpg.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image5.jpg.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image6.jpg.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image7.jpg.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image8.jpg.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image9.jpg.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image10.jpg.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image11.jpg.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="images/image12.jpg.png" style="width:100%">
+        </div>
+    
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
    <!-- tab video -->
@@ -375,15 +419,15 @@
             <div class="form-row">
                 <div class="form-labels">
                     <div class="form-group">
-                        <label    for="organizer-name"><i class="icon-user">  <img src="images/profile-user.png" alt="profileicon"></i> Organizer Name</label>
+                        <label    for="organizer-name"><i class="icon-user">  <img src="images/profile-user.svg" alt="profileicon"></i> Organizer Name</label>
                         <p class="tex" style="font-weight: 400;">CICA Vancouver</p>
                     </div>
                     <div class="form-group">
-                        <label for="organizer-phone"><i class="icon-phone">  <img src="images/profile-phone.png" alt="profilephoneicon"></i> Organizer Phone</label>
+                        <label for="organizer-phone"><i class="icon-phone">  <img src="images/profile-phone.svg" alt="profilephoneicon"></i> Organizer Phone</label>
                         <p class="tex" style="font-weight: 400;">https://cicavancouver.com/</p>
                     </div>
                     <div class="form-group">
-                        <label for="organizer-email"><i class="icon-email"> <img src="images/profile-email.png" alt="profileemailicon"></i> Organizer Email</label>
+                        <label for="organizer-email"><i class="icon-email"> <img src="images/profile-email." alt="profileemailicon"></i> Organizer Email</label>
                         <p class="tex" style="font-weight: 400;">n/a</p>
                     </div>
                 </div>
@@ -796,5 +840,39 @@
    
 </div>
 <script src="script.js"></script> <!-- Link to your JavaScript file -->
+<script>
+    let slideIndex = 1;
+    const slides = document.getElementsByClassName("mySlides");
+    const overlay = document.getElementById("slideshow-overlay");
+    const container = document.getElementById("slideshow-container");
+
+    function openSlideshow(n) {
+        slideIndex = n;
+        overlay.style.display = "block";
+        container.style.display = "block";
+       
+        showSlides(slideIndex);
+    }
+
+    function closeSlideshow() {
+        overlay.style.display = "none";
+        container.style.display = "none";
+    }
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    function showSlides(n) {
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+        
+    }
+</script>
+
 </body>
 </html>
