@@ -90,5 +90,16 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // tab mobile
-    
+    // payment
+    function increment(id) {
+      let counter = document.getElementById(id);
+      counter.textContent = parseInt(counter.textContent) + 1;
+  }
+  
+  function decrement(id) {
+      let counter = document.getElementById(id);
+      if (parseInt(counter.textContent) > 0) {
+          counter.textContent = parseInt(counter.textContent) - 1;
+      }
+  }
+ 

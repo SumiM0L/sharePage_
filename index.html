@@ -18,46 +18,68 @@
     </div>
     <div class="navigation-container poppins-medium">
         <div class="navigation">
-            <p><img src="images/home.png" alt="Home Icon"> Home</p>
-            <p><img src="images/wishlist.png" alt="Wishlist Icon"> Wishlist</p>
-            <p><img src="images/event.png" alt="Event Icon"> Event</p>
-            <p><img src="images/share.png" alt="Share Icon"> Share</p>
-            <p><img src="images/dashboard.png" alt="Dashboard Icon"> Dashboard</p>
+            <p><img src="images/home.svg" alt="Home Icon"> Home</p>
+            <p><img src="images/wishlist.svg" alt="Wishlist Icon"> Wishlist</p>
+            <p><img src="images/event.svg" alt="Event Icon"> Event</p>
+            <p><img src="images/share.svg" alt="Share Icon"> Share</p>
+            <p><img src="images/dashboard.svg" alt="Dashboard Icon"> Dashboard</p>
         </div>
     </div>
     
     
-    <div class="event-session  "> 
+    <div><div class="event-session  "> 
         <div class="left-session"> 
             <div class="calender-session">
                 <img src="images/calender.png" alt="Calendar Icon">
                 <span style="color: #9A3452;font-size: 20px;font-weight: 400; font-family: poppins;" >Date: 03 July 2024</span>
             </div>
             <div     class=" inter wordspace" style="color: rgba(16, 24, 40, 1);font-size: 22px;font-weight: 600;font-family: poppins;" > BOOTLEGGERS X PIXEL SUMMER FESTIVAL</div>
-            <div> <p style="font-size: 16px;font-weight: 400;"    class="dronetext poppins-medium">Live Drone Show, Local and Headliner DJs, Outdoor Art Exhibition, Marketplace and more...
+            <div> <p style="font-size: 16px;font-weight: 400;"    class="dronetext poppins-medium">Join us for an unforgettable summer experience at the Bootleggers X Pixel Summer Festival! This vibrant event is packed with thrilling activities and entertainment that will captivate all your senses....
             </p></div>
         </div>
-        <div class="card-profile poppins-medium">
-            <div class="follower">123 Followers</div>
-            <div class="profile-section">
-                <div class="profile-icon">
-                    <img src="images/profile image.png" alt="profile-icon">
+        <div style="display: flex;flex-direction: column;">
+        <div class="pay">
+            <h1 class="pay_title">BOOTLEGGERS X PIXEL</h1>
+            <div class="Adult">
+                <div>
+                    <p>Adult ($10)</p>
                 </div>
-                <div class="profile-details">
-                    <div style="font-size: 16px; font-weight: 400;">
-                        By <span style="font-weight: 700; color: rgba(71, 84, 103, 1);">Bootleggers Cocktail436</span>
-                    </div>
-                    <div class="attendees">4.2k Attendees Hosted</div>
+                <div class="counter">
+                    <button class="counter-button" onclick="decrement('adultCounter')">-</button>
+                    <span class="numbercount" id="adultCounter">0</span>
+                    <button class="counter-button" onclick="increment('adultCounter')">+</button>
                 </div>
             </div>
-            <div class="button-follow">
-                <img src="images/addaccount.svg" alt="add-icon">
-                <img src="images/chat.svg" alt="chat-icon">
-                <img src="images/link.svg" alt="link-icon">
+            <div class="child">
+                <div>
+                    <p>Child ($5)</p>
+                </div>
+                <div class="counter">
+                    <button class="counter-button" onclick="decrement('childCounter')">-</button>
+                    <span  class="numbercount" id="childCounter">0</span>
+                    <button class="counter-button" onclick="increment('childCounter')">+</button>
+                </div>
             </div>
+            <div class="senior">
+                <div>
+                    <p>Seniors ($7)</p>
+                </div>
+                <div class="counter">
+                    <button class="counter-button" onclick="decrement('seniorCounter')">-</button>
+                    <span  class="numbercount" id="seniorCounter">0</span>
+                    <button class="counter-button" onclick="increment('seniorCounter')">+</button>
+                </div>
+            </div>
+            <div class="total_amount"><div class="amount">Total Amount</div><div class="price">CA $25.99</div></div>
+
         </div>
-        
+
+        <div class="pay-container"> <div class="pay_now"><p>Pay Now for 3 Tickets </p> 
+        </div></div>
     </div>
+        
+    </div></div>
+   
     <div class="event-details poppins-medium ">
         <div class="detail-session">
             <h1 style=" margin: 0; font-size: 22px;font-weight: 600;">Event Detail</h1>
@@ -93,39 +115,51 @@
         </div>
         <div class="event_image"><img style="width: 100%;height: 100%;margin-top: 17px;"    src="images/eventiamge.png" class="hideinmob" alt="eventimage"></div>
     </div>
-    <div class="event-details-container poppins-medium">
-        <div class="event-details-section">
-            <div>
-                <h1>Venue</h1>
-                <div class="details">
-                    
-                    <div style="font-family: poppins;font-weight: 400;font-size: 18px;">CICA Vancouver</div>
+
+    <div class="venu_location"> 
+        <div>
+            <div class="event-details-container poppins-medium">
+            <div class="event-details-section">
+                <div>
+                    <h1>Venue</h1>
+                    <div class="details">
+                        
+                        <div style="font-family: poppins;font-weight: 400;font-size: 18px;">CICA Vancouver</div>
+                    </div>
+                </div>
+                <div>
+                    <h1>Location</h1>
+                    <div class="details">
+                        <div><img src="images/location.png" class="lg" alt="location-icon"></div>
+                        <div style="font-family: poppins;font-weight: 400;font-size: 18px;">228 Abbott Street Vancouver, BC V6B 1C8 Canada</div>
+                    </div>
                 </div>
             </div>
-            <div>
-                <h1>Location</h1>
-                <div class="details">
-                    <div><img src="images/location.png" class="lg" alt="location-icon"></div>
-                    <div style="font-family: poppins;font-weight: 400;font-size: 18px;">228 Abbott Street Vancouver, BC V6B 1C8 Canada</div>
+            <div class="event-details-section">
+                <div>
+                    <h1>Date And Time</h1>
+                    <div class="details">
+                        
+                        <div style="font-family: poppins;font-weight: 400;font-size: 18px;">Mon, Jun 24, 2024 - 02:30 PM</div>
+                    </div>
+                </div>
+                <div>
+                    <h1>Refund Policy</h1>
+                    <div class="details">
+                    
+                        <div style="font-family: poppins;font-weight: 400;font-size: 18px;">Refunds up to 7 days before event</div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="event-details-section">
-            <div>
-                <h1>Date And Time</h1>
-                <div class="details">
-                    
-                    <div style="font-family: poppins;font-weight: 400;font-size: 18px;">Mon, Jun 24, 2024 - 02:30 PM</div>
-                </div>
-            </div>
-            <div>
-                <h1>Refund Policy</h1>
-                <div class="details">
-                
-                    <div style="font-family: poppins;font-weight: 400;font-size: 18px;">Refunds up to 7 days before event</div>
-                </div>
-            </div>
+    </div>
+    <a href="https://www.google.com/maps/place/random+location+in+Canada" target="_blank" rel="noopener noreferrer">
+        <div class="responsive-image-container">
+            <img src="images/location-map.svg" alt="location">
         </div>
+    </a>
+    
+    
     </div>
     
     
@@ -228,6 +262,7 @@
         <ul class="tabs poppins-medium">
             <li class="tab-link active" data-tab="tab-gallery">Gallery</li>
             <li class="tab-link" data-tab="tab-video">Video Gallery</li>
+            <li class="tab-link" data-tab="tab-sponsers">Sponsers</li>
             <li class="tab-link" data-tab="tab-specification">Featuring</li>
             <li class="tab-link" data-tab="tab-organizer">Contact Organizer</li>
             <li class="tab-link" data-tab="tab-featuring">Specification</li>
@@ -326,6 +361,9 @@
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
     </div>
 
+
+
+
    <!-- tab video -->
     
     <div id="tab-video" class="tab-content poppins-medium">
@@ -411,6 +449,177 @@
         </div>
         
     </div>
+
+    
+    <!-- tab sponsers -->
+    <div id="tab-sponsers" class="tab-content poppins-medium">
+        <!-- first row -->
+        <div class="sponser-container">
+            <div class="sponsor-card">
+            <div class="follower-count">123 Followers</div>
+            <div class="sponsor-profile-section">
+                <div class="sponsor-profile-icon">
+                    <img src="images/profile1.png" alt="profile-icon">
+                </div>
+                <div class="sponsor-profile-details">
+                    <div style="font-weight: 700; color: rgba(71, 84, 103, 1);">Company Name
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="sponsor-button-follow">
+                <img src="images/addaccount.svg" alt="add-icon">
+                <img src="images/chat.svg" alt="chat-icon">
+                <img src="images/link.svg" alt="link-icon">
+            </div>
+        </div>
+        <div class="sponsor-card">
+            <div class="follower-count">123 Followers</div>
+            <div class="sponsor-profile-section">
+                <div class="sponsor-profile-icon">
+                    <img src="images/profile1.png" alt="profile-icon">
+                </div>
+                <div class="sponsor-profile-details">
+                    <div style="font-weight: 700; color: rgba(71, 84, 103, 1);">Company Name
+                    </div>
+                </div>
+            </div>
+            <div class="sponsor-button-follow">
+                <img src="images/addaccount.svg" alt="add-icon">
+                <img src="images/chat.svg" alt="chat-icon">
+                <img src="images/link.svg" alt="link-icon">
+            </div>
+        </div>
+        <div class="sponsor-card">
+            <div class="follower-count">123 Followers</div>
+            <div class="sponsor-profile-section">
+                <div class="sponsor-profile-icon">
+                    <img src="images/profile1.png" alt="profile-icon">
+                </div>
+                <div class="sponsor-profile-details">
+                    <div style="font-weight: 700; color: rgba(71, 84, 103, 1);">Company Name
+                    </div>
+                </div>
+            </div>
+            <div class="sponsor-button-follow">
+                <img src="images/addaccount.svg" alt="add-icon">
+                <img src="images/chat.svg" alt="chat-icon">
+                <img src="images/link.svg" alt="link-icon">
+            </div>
+        </div>
+    </div>
+
+    <!-- secondrow  -->
+    <div class="sponser-container">
+        <div class="sponsor-card">
+        <div class="follower-count">123 Followers</div>
+        <div class="sponsor-profile-section">
+            <div class="sponsor-profile-icon">
+                <img src="images/profile1.png" alt="profile-icon">
+            </div>
+            <div class="sponsor-profile-details">
+                <div style="font-weight: 700; color: rgba(71, 84, 103, 1);">Company Name
+                </div>
+            </div>
+        </div>
+        <div class="sponsor-button-follow">
+            <img src="images/addaccount.svg" alt="add-icon">
+            <img src="images/chat.svg" alt="chat-icon">
+            <img src="images/link.svg" alt="link-icon">
+        </div>
+    </div>
+    <div class="sponsor-card">
+        <div class="follower-count">123 Followers</div>
+        <div class="sponsor-profile-section">
+            <div class="sponsor-profile-icon">
+                <img src="images/profile1.png" alt="profile-icon">
+            </div>
+            <div class="sponsor-profile-details">
+                <div style="font-weight: 700; color: rgba(71, 84, 103, 1);">Company Name
+                </div>
+            </div>
+        </div>
+        <div class="sponsor-button-follow">
+            <img src="images/addaccount.svg" alt="add-icon">
+            <img src="images/chat.svg" alt="chat-icon">
+            <img src="images/link.svg" alt="link-icon">
+        </div>
+    </div>
+    <div class="sponsor-card">
+        <div class="follower-count">123 Followers</div>
+        <div class="sponsor-profile-section">
+            <div class="sponsor-profile-icon">
+                <img src="images/profile1.png" alt="profile-icon">
+            </div>
+            <div class="sponsor-profile-details">
+                <div style="font-weight: 700; color: rgba(71, 84, 103, 1);">Company Name
+                </div>
+            </div>
+        </div>
+        <div class="sponsor-button-follow">
+            <img src="images/addaccount.svg" alt="add-icon">
+            <img src="images/chat.svg" alt="chat-icon">
+            <img src="images/link.svg" alt="link-icon">
+        </div>
+    </div>
+</div>
+     <!-- thirdrow -->
+        
+     <div class="sponser-container">
+        <div class="sponsor-card">
+        <div class="follower-count">123 Followers</div>
+        <div class="sponsor-profile-section">
+            <div class="sponsor-profile-icon">
+                <img src="images/profile1.png" alt="profile-icon">
+            </div>
+            <div class="sponsor-profile-details">
+                <div style="font-weight: 700; color: rgba(71, 84, 103, 1);">Company Name
+                </div>
+            </div>
+        </div>
+        <div class="sponsor-button-follow">
+            <img src="images/addaccount.svg" alt="add-icon">
+            <img src="images/chat.svg" alt="chat-icon">
+            <img src="images/link.svg" alt="link-icon">
+        </div>
+    </div>
+    <div class="sponsor-card">
+        <div class="follower-count">123 Followers</div>
+        <div class="sponsor-profile-section">
+            <div class="sponsor-profile-icon">
+                <img src="images/profile1.png" alt="profile-icon">
+            </div>
+            <div class="sponsor-profile-details">
+                <div style="font-weight: 700; color: rgba(71, 84, 103, 1);">Company Name
+                </div>
+            </div>
+        </div>
+        <div class="sponsor-button-follow">
+            <img src="images/addaccount.svg" alt="add-icon">
+            <img src="images/chat.svg" alt="chat-icon">
+            <img src="images/link.svg" alt="link-icon">
+        </div>
+    </div>
+    <div class="sponsor-card">
+        <div class="follower-count">123 Followers</div>
+        <div class="sponsor-profile-section">
+            <div class="sponsor-profile-icon">
+                <img src="images/profile1.png" alt="profile-icon">
+            </div>
+            <div class="sponsor-profile-details">
+                <div style="font-weight: 700; color: rgba(71, 84, 103, 1);">Company Name
+                </div>
+            </div>
+        </div>
+        <div class="sponsor-button-follow">
+            <img src="images/addaccount.svg" alt="add-icon">
+            <img src="images/chat.svg" alt="chat-icon">
+            <img src="images/link.svg" alt="link-icon">
+        </div>
+    </div>
+</div>
+    </div>
+    
 
     <!-- taborganizer -->
 
