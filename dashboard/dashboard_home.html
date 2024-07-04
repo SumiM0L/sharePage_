@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard_home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main-container">
+        <div class="content-container">
+            <img src="../images/bannerimage.png" class="imgsrc" alt="Example Image">
+        </div>
+        <div class="heading"> Home > <span>Dashboard</span></div>
+        <div class="tab-container">
+            <div class="tab-buttons">
+                <button onclick="showTabContent('tab1')">Events Dashboard</button>
+                <button onclick="showTabContent('tab2')">Event Attending</button>
+                <button onclick="showTabContent('tab3')">Submit Events</button>
+                <button onclick="showTabContent('tab4')">Active Events</button>
+                <button onclick="showTabContent('tab5')">Post Events</button>
+                <button onclick="showTabContent('tab6')">Drafts Events</button>
+                <button onclick="showTabContent('tab7')">Bookmarked Events</button>
+                <button onclick="showTabContent('tab8')">Sponsors List</button>
+                <button onclick="showTabContent('tab9')">Request Cancellation</button>
+            </div>
+            <div id="tab1" class="tab-content">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Event Title</th>
+                            <th>Venue</th>
+                            <th>Organised By</th>
+                            <th>Tickets</th>
+                            <th>Quantity</th>
+                            <th>Ticket Type</th>
+                            <th>Total Amount</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Event 1</td>
+                            <td>Venue 1</td>
+                            <td>Organizer 1</td>
+                            <td>Ticket 1</td>
+                            <td>10</td>
+                            <td>Type 1</td>
+                            <td>$100</td>
+                            <td><button class="edit-button">Edit</button></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Event 2</td>
+                            <td>Venue 1</td>
+                            <td>Organizer 1</td>
+                            <td>Ticket 1</td>
+                            <td>10</td>
+                            <td>Type 1</td>
+                            <td>$100</td>
+                            <td><button class="edit-button">Edit</button></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Event 3</td>
+                            <td>Venue 1</td>
+                            <td>Organizer 1</td>
+                            <td>Ticket 1</td>
+                            <td>10</td>
+                            <td>Type 1</td>
+                            <td>$100</td>
+                            <td><button class="edit-button">Edit</button></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Event 4</td>
+                            <td>Venue 1</td>
+                            <td>Organizer 1</td>
+                            <td>Ticket 1</td>
+                            <td>10</td>
+                            <td>Type 1</td>
+                            <td>$100</td>
+                            <td><button class="edit-button">Edit</button></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Event 5</td>
+                            <td>Venue 1</td>
+                            <td>Organizer 1</td>
+                            <td>Ticket 1</td>
+                            <td>10</td>
+                            <td>Type 1</td>
+                            <td>$100</td>
+                            <td><button class="edit-button">Edit</button></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Event 6</td>
+                            <td>Venue 1</td>
+                            <td>Organizer 1</td>
+                            <td>Ticket 1</td>
+                            <td>10</td>
+                            <td>Type 1</td>
+                            <td>$100</td>
+                            <td><button class="edit-button">Edit</button></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                    <tbody>
+                        <tr>
+                            <td>Event 7</td>
+                            <td>Venue 1</td>
+                            <td>Organizer 1</td>
+                            <td>Ticket 1</td>
+                            <td>10</td>
+                            <td>Type 1</td>
+                            <td>$100</td>
+                            <td><button class="edit-button">Edit</button></td>
+                        </tr>
+                        <!-- Add more rows as needed -->
+                    </tbody>
+                </table>
+            </div>
+            
+            <!-- Repeat the tab-content divs for other tabs (tab2, tab3, ...) -->
+        </div>
+    
+        <script>
+            function showTabContent(tabId) {
+                var contents = document.querySelectorAll('.tab-content');
+                contents.forEach(content => content.classList.remove('active'));
+    
+                var activeTab = document.getElementById(tabId);
+                if (activeTab) {
+                    activeTab.classList.add('active');
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

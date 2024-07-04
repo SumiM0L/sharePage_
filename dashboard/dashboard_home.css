@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+.poppins-medium {
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+.inter {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "slnt" 10;
+}
+.wordspace {
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+}
+.poppins-semibold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+.main-container {
+    width: 92%;
+    margin: 0 auto;
+}
+
+.content-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+}
+
+.heading span {
+    color: #9A3452;
+}
+/* tab */
+.tab-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.tab-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    
+}
+
+.tab-buttons button {
+    flex: 1;
+    padding: 10px;
+    border-right: 1px solid rgba(234, 236, 240, 1);
+    
+    
+    /* background: #fff; */
+    cursor: pointer;
+  
+}
+
+.tab-content {
+    display: none;
+    padding: 10px;
+    border: 1px solid rgba(234, 236, 240, 1);
+    border-radius: 8px;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid rgba(234, 236, 240, 1);
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background: #f2f2f2;
+}
+
+.edit-button {
+    background: #C11F50;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+    .tab-buttons {
+        flex-direction: column;
+    }
+
+    .tab-buttons button {
+        flex: none;
+        width: 100%;
+        margin-bottom: 10px;
+    }}

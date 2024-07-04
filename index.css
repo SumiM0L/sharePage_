@@ -35,7 +35,7 @@ body {
     color: #333;
    
 }.main-container{
-    width: 92%;
+    width: 93%;
     margin: 0 auto;
 }
 
@@ -53,7 +53,7 @@ body {
     justify-content: flex-end; /* Align navigation to the right */
     align-items: center;
     font-family: poppins;
-    margin-bottom: 30px;
+    margin-bottom: 6px;
 }
 
 .navigation {
@@ -80,7 +80,13 @@ body {
     width: 20px;
     height: 20px;
 }
-
+.line{
+    width:100%;
+    height:1px;
+    background:black;
+    opacity:20%;
+    margin-bottom:20px
+}
 
 .file-wrapper{
     display: flex;justify-content: space-around;align-items: center;
@@ -120,6 +126,7 @@ body {
     padding-right: 20px; /* Add padding for spacing between left and right sections */
     width: 43%;
     font-family: poppins;
+    justify-content:flex-end;
    
     
 }
@@ -160,7 +167,7 @@ body {
 
 
 .pay_title {
-    font-size: 22px;
+    font-size: 20px;
     font-family: 'Poppins';
     font-weight: 600;
 }
@@ -174,7 +181,7 @@ body {
     
 }
 .Adult p, .child p, .senior p {
-    font-size: 22px;
+    font-size: 17px;
     font-family: 'poppins';
     font-weight:500;
     margin: 4px;
@@ -201,7 +208,7 @@ body {
 }
 
 .numbercount{
-    font-size: 22px;
+    font-size: 18px;
     font-family: poppins;
     font-weight: 600;
 } 
@@ -211,12 +218,12 @@ body {
     align-items: center;
 }
 .amount{
-    font-size: 22px;
+    font-size: 17px;
     font-family: poppins;
     font-weight: 500;
 }
 .price{
-    font-size: 22px;
+    font-size: 17px;
     font-family: poppins;
     font-weight: 600;
     color: #C11F50;
@@ -239,9 +246,13 @@ body {
     color: white;
     text-align: center;
     font-size: 17px;
+    
     font-weight: 600;
 }
 
+.pay_now p{
+    margin:12px;
+}
 /* Media query for responsiveness */
 @media screen and (max-width: 768px) {
     .pay-container {
@@ -359,11 +370,13 @@ ol {
 .venu_location {
     display: flex;
     justify-content: space-between;
+    align-items:flex-start
 }
 
 @media (max-width: 708px) {
     .venu_location {
         flex-direction: column;
+        gap:10px
     }
 }
 
@@ -373,13 +386,14 @@ ol {
     height: auto; /* Maintain aspect ratio */
     display: flex; /* Flexbox for easy centering */
     justify-content: center; /* Center the image horizontally */
-    width: 410px;
+   
 }
 
 .responsive-image-container img {
     max-width: 100%; /* Ensure the image scales with the container */
     height: auto; /* Maintain aspect ratio */
     display: block; /* Remove inline element spacing issues */
+    width:406px
 }
 
 /* Media query for mobile devices */
@@ -401,23 +415,18 @@ ol {
     background-color: rgba(246, 246, 246, 1);
     border-radius: 18px;
     
-    /* display: flex; */
-    align-items: center;
-    justify-content: center;
    
-    margin-top: 30px;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+   
+    
 
 }
 
 .event-details-section {
-    width: 50%;
-    flex-grow: 1;
+    width: 100%;
+    
 }
 
-.event-details-section > div {
-    margin-top: 20px;
-}
+
 
 .event-details-section h1 {
     display: flex;
@@ -488,7 +497,7 @@ ol {
 .tab-content {
     display: none;
     padding: 30px;
-    background-color: rgba(231, 231, 231, 0.38);
+  
     border-radius: 12px;
 }
 
@@ -702,7 +711,7 @@ ol {
 
 /* tab for sponser */
 /* tab for sponsors */
-#tab-sponsers {
+/* #tab-sponsers {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -714,14 +723,15 @@ ol {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 10px;
 }
 
 .sponsor-card {
-    padding: 30px;
+    padding:20px;
     border-radius: 24px;
-    position: relative;
+   
     border: 1px solid #C11F50;
-    max-width: 400px;
+    max-width: 432px;
     font-family: 'Poppins Medium', sans-serif;
     display: flex;
     flex-direction: column;
@@ -784,7 +794,7 @@ ol {
         margin: 10px 0;
     }
 }
-
+ */
 
 /* tab for sponsor ened */
 /* tab  Content for Featuring started */
@@ -1055,7 +1065,7 @@ h1 {
 
 
 .imgsrc{
-    width: 100%;
+    width: 104%;
     object-fit: cover;
 }
 
@@ -1134,6 +1144,7 @@ h1 {
     
     height: 215px;
 }
+
 .event-details-section > div {
     margin-top: 0px;
     display: flex;
@@ -1141,6 +1152,9 @@ h1 {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+}
+.loclg{
+    display:flex;
 }
 
 .card-profile {
@@ -1797,7 +1811,7 @@ label i {
     display: flex;
     flex-direction: row;
     width: 100%; /* Ensures the row takes up full width */
-    gap: 20px; /* Equal gap between columns */
+    gap: 35px; /* Equal gap between columns */
     margin-bottom: 20px; /* Equal gap between rows */
 }
 
