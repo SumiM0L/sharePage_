@@ -35,8 +35,8 @@
                 <span style="color: #9A3452;font-size: 20px;font-weight: 400; font-family: poppins;" >Date: 03 July 2024</span>
             </div>
             <div     class=" inter wordspace" style="color: rgba(16, 24, 40, 1);font-size: 22px;font-weight: 600;font-family: poppins;" > BOOTLEGGERS X PIXEL SUMMER FESTIVAL</div>
-            <div> <p style="font-size: 16px;font-weight: 400;"    >Join us for an unforgettable summer experience at the Bootleggers X Pixel Summer Festival! This vibrant event is packed with thrilling activities and entertainment that will captivate all your senses....
-            </p></div>
+            <div style="font-size: 16px;font-weight: 400;"    class="dronetext poppins-medium">Join us for an unforgettable summer experience at the Bootleggers X Pixel Summer Festival! This vibrant event is packed with thrilling activities and entertainment that will captivate all your senses....
+            </div>
         </div>
         <div style="display: flex;flex-direction: column;">
         <div class="pay">
@@ -322,7 +322,7 @@
     <div class="slideshow-container" id="slideshow-container">
         <span class="closeside " onclick="closeSlideshow()">&times;</span>
         <div class="mySlides fade">
-            <img src="images/image1.jpg." style="width:100%">
+            <img src="images/image1.jpg" style="width:100%">
         </div>
         <div class="mySlides fade">
             <img src="images/image2.jpg.png" style="width:100%">
@@ -1084,38 +1084,43 @@
 </div>
 <script src="script.js"></script> <!-- Link to your JavaScript file -->
 <script>
-    let slideIndex = 1;
-    const slides = document.getElementsByClassName("mySlides");
-    const overlay = document.getElementById("slideshow-overlay");
-    const container = document.getElementById("slideshow-container");
+        let slideIndex = 0; // Start with 0 for correct array indexing
+        const slides = document.getElementsByClassName("mySlides");
+        const overlay = document.getElementById("slideshow-overlay");
+        const container = document.getElementById("slideshow-container");
+        const slideshowImg = document.querySelector(".slideshow-img");
 
-    function openSlideshow(n) {
-        slideIndex = n;
-        overlay.style.display = "block";
-        container.style.display = "block";
-       
-        showSlides(slideIndex);
-    }
-
-    function closeSlideshow() {
-        overlay.style.display = "none";
-        container.style.display = "none";
-    }
-
-    function plusSlides(n) {
-        showSlides(slideIndex += n);
-    }
-
-    function showSlides(n) {
-        if (n > slides.length) {slideIndex = 1}
-        if (n < 1) {slideIndex = slides.length}
-        for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
+        function openSlideshow(n) {
+            slideIndex = n - 1; // Adjust index to start from 0
+            overlay.style.display = "block";
+            container.style.display = "block";
+            showSlides();
         }
-        slides[slideIndex - 1].style.display = "block";
-        
-    }
-</script>
+
+        function closeSlideshow() {
+            overlay.style.display = "none";
+            container.style.display = "none";
+        }
+
+        function plusSlides(n) {
+            slideIndex += n;
+            if (slideIndex >= slides.length) {
+                slideIndex = 0; // Wrap around to the first slide
+            }
+            if (slideIndex < 0) {
+                slideIndex = slides.length - 1; // Wrap around to the last slide
+            }
+            showSlides();
+        }
+
+        function showSlides() {
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slides[slideIndex].style.display = "block";
+            slideshowImg.src = slides[slideIndex].src;
+        }
+    </script>
 
 </body>
 </html>
