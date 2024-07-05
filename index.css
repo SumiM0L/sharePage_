@@ -412,7 +412,6 @@ ol {
     margin: 0 auto;
    
    
-    background-color: rgba(246, 246, 246, 1);
     border-radius: 18px;
     
    
@@ -496,7 +495,7 @@ ol {
 
 .tab-content {
     display: none;
-    padding: 30px;
+  
   
     border-radius: 12px;
 }
@@ -517,7 +516,7 @@ ol {
 
 .card-row {
     display: flex;
-    justify-content: space-around;
+    
 }
 
 .card {
@@ -1115,13 +1114,13 @@ h1 {
 .event-details-container {
     margin: 0 auto;
     padding: 15px;
-    background-color: rgba(246, 246, 246, 1);
+ 
     border-radius: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
     margin-top: 0px;
-    /* box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; */
+    
 }
 .event-details-section > div {
     margin-top: 0px;
@@ -1336,7 +1335,7 @@ h1{
     margin: 0 auto;
     padding: 20px;
     box-sizing: border-box;
-    background-color: rgba(231, 231, 231, 0.38);
+  
     border-radius: 18px;
     opacity: 1;
     display: flex;
@@ -1350,7 +1349,7 @@ h1{
 }
 .reg{
     padding: 20px;
-    background: rgba(246, 246, 246, 1);
+ 
     border-radius: 16px;
     /* box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px; */
 }
@@ -1391,7 +1390,7 @@ h1{
     display: flex;
     padding: 20px;
     margin-top: -1px;
-    background-color: rgba(231, 231, 231, 0.38);
+  
     border-radius: 12px;
     margin: 20px;
 }
@@ -1446,7 +1445,7 @@ h1{
     display: flex;
     padding: 20px;
     margin-top: -1px;
-    background-color: rgba(231, 231, 231, 0.38);
+  
     border-radius: 12px;
     margin: 20px;
     height: fit-content;
@@ -1584,8 +1583,7 @@ h1{
         margin: 0 auto;
         padding: 25px;
         box-sizing: border-box;
-        background-color: rgba(231, 231, 231, 0.38);
-        /* box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px; */
+       
 
         border-radius: 18px;
         opacity: 1;
@@ -1811,8 +1809,8 @@ label i {
     display: flex;
     flex-direction: row;
     width: 100%; /* Ensures the row takes up full width */
-    gap: 35px; /* Equal gap between columns */
-    margin-bottom: 20px; /* Equal gap between rows */
+   /* Equal gap between columns */
+   
 }
 
 .heading {
