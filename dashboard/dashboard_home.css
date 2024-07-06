@@ -167,23 +167,21 @@ body {
    background-color: #C11F50;
     margin-bottom:20px
 }
-.earning-money{
+.earning-money {
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    flex-direction: row; /* Default for larger screens */
 }
 
 .life-time {
     display: flex;
     align-items: center;
-   
-    
 }
 
 .circle-container {
-    /* position: relative; */
     width: 123.79px;
     height: 123.79px;
     border-radius: 50%;
@@ -191,11 +189,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    border:4px solid #C11F50;
+    border: 4px solid #C11F50;
+    position: relative; /* Ensure absolute positioning for .small-circle */
 }
 
 .circle-container img {
-   
     object-fit: cover;
 }
 
@@ -208,56 +206,93 @@ body {
     background-color: #C11F50;
     border-radius: 50%;
 }
-.life-time-box{
+
+.life-time-box {
     width: 203px;
     background-color: rgba(244, 243, 243, 1);
     padding: 10px;
-
+    margin-left: 10px; /* Add some space between the circle and the box */
 }
 
-.event_bar_container{
+/* Responsive styles */
+@media (max-width: 768px) {
+    .earning-money {
+        flex-direction: column;
+    }
+
+    .life-time {
+        margin-bottom: 20px; /* Add space between the items */
+    }
+
+    .life-time:last-child {
+        margin-bottom: 0; /* Remove margin from the last item */
+    }
+}
+
+@media (max-width: 576px) {
+    .circle-container {
+        width: 100px;
+        height: 100px;
+    }
+
+    .life-time-box {
+        width: auto;
+        padding: 5px;
+    }
+
+    .life-time-box p {
+        font-size: 14px;
+    }
+
+    .life-time-box p:first-child {
+        font-size: 10px;
+    }
+}
+
+/* event bar chart */
+
+.event_bar_container {
     display: flex;
     justify-content: space-between;
-    align-items:start;
+    align-items: start;
     width: 100%;
     gap: 30px;
-    margin: 15px 0px;
+    margin: 15px 0;
 }
-.bar-text{
+
+.bar-text {
     font-size: 22px;
     font-weight: 500;
-    font-family: poppins;
-    margin-bottom: -19px;
-}
-.event-text{
-    font-size: 22px;
-    font-weight: 500;
-    font-family: poppins;
+    font-family: 'Poppins', sans-serif;
     margin-bottom: -19px;
 }
 
-.linep{
-    width:16%;
-    height:5px;
-   
-   background-color: #C11F50;
-    margin-bottom:65px
+.event-text {
+    font-size: 22px;
+    font-weight: 500;
+    font-family: 'Poppins', sans-serif;
+    margin-bottom: -19px;
 }
 
-.lineq{
-    width:12%;
-    height:5px;
-   
-   background-color: #C11F50;
-    margin-bottom:20px
+.linep {
+    width: 16%;
+    height: 5px;
+    background-color: #C11F50;
+    margin-bottom: 65px;
 }
-.event-container{
+
+.lineq {
+    width: 12%;
+    height: 5px;
+    background-color: #C11F50;
+    margin-bottom: 20px;
+}
+
+.event-container {
     box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
     width: 50%;
     padding: 10px;
 }
-
-/* bar chart */
 
 .bar_container {
     position: relative;
@@ -265,12 +300,7 @@ body {
     width: 50%;
 }
 
-.active,
-.past,
-.active_event,
-.draft,
-.sponsor,
-.bookmarked {
+.active, .past, .active_event, .draft, .sponsor, .bookmarked {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -293,24 +323,26 @@ body {
 .barline {
     width: 100%;
     height: 1px;
-    background: rgba(0, 0, 0, 0.2); /* Adjust opacity value as needed */
-    margin-bottom: 65px; /* Adjust the gap between each barline */
+    background: rgba(0, 0, 0, 0.2);
+    margin-bottom: 65px;
 }
 
-/* bar chart */
-
 .chart-progress {
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-    align-items: center;
+    
+    gap: 22px;
+   
+    
     position: relative;
-    z-index: 1; /* Ensure it's above chart-line */
+    z-index: 1;
     height: 329px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 .chart-progress > div {
-    width: calc(50% - 10px); /* Adjust width based on desired layout */
+    width: calc(100% / 6 - 10px);
     padding: 10px;
     text-align: center;
     border-radius: 8px;
@@ -318,7 +350,7 @@ body {
 
 .chart-progress > div > div:first-child {
     width: 32px;
-    height: auto; /* Adjust height based on content */
+    height: auto;
     margin: 0 auto;
     box-sizing: border-box;
 }
@@ -332,17 +364,62 @@ body {
 
 .chart-line {
     position: absolute;
-    top: 21%; /* Adjust this value to position it correctly */
+    top: 34.1%;
     left: 0;
     width: 100%;
-    z-index: 0; /* Ensure it's below chart-progress */
+    z-index: 0;
 }
 
-@media (max-width: 600px) {
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .chart-progress > div {
+        width: calc(100% / 3 - 10px);
+    }
+}
+
+@media (max-width: 992px) {
+    .chart-progress > div {
+        width: calc(100% / 2 - 10px);
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .event_bar_container {
+        flex-direction: column;
+    }
+
+    .event-container,
+    .bar_container {
+        width: 100%;
+    }
+
     .chart-progress > div {
         width: 100%;
     }
+    .chart-progress {
+
+        display: flex;
+    justify-content: space-between;
+    gap: 0px;
+    }
+    
 }
+
+@media (max-width: 576px) {
+    .chart-progress > div {
+        font-size: 8px;
+    }
+
+    .chart-progress > div > div:first-child {
+        height: 100px;
+    }
+
+    .count-store {
+        padding: 8px 10px;
+    }
+}
+
 
 
 
@@ -363,6 +440,9 @@ body {
   
 /* Responsive Design */
 
+
+
+/* For larger screens */
 @media (max-width: 1200px) {
     .accordion-wrapper {
         flex: 0 0 25%;
@@ -373,6 +453,7 @@ body {
     }
 }
 
+/* For medium screens */
 @media (max-width: 992px) {
     .accordion-wrapper {
         flex: 0 0 30%;
@@ -383,6 +464,7 @@ body {
     }
 }
 
+/* For smaller screens */
 @media (max-width: 768px) {
     .event-dashboard-container {
         flex-direction: column;
@@ -395,6 +477,13 @@ body {
 
     .chart-session {
         flex: 0 0 100%;
+    }
+}
+
+/* For extra small screens */
+@media (max-width: 600px) {
+    .earning-money {
+        flex-direction: column;
     }
 }
 
