@@ -1,10 +1,130 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color:white;
+    color: #333;
+}
+
+.event-dashboard-container {
+    display: flex;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    flex-direction: row;
+}
+
+.accordion-wrapper {
+    flex: 0 0 20%;
+   
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
+    background: #C11F50;
+}
+
+.chart-session {
+    flex: 1; /* Flex-grow to take remaining width */
+ 
+}
+
+.main-container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* accordion */
+
+.accordion {
+    width: 100%;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 16px;
+}
+
+.accordion:last-child {
+    margin-bottom: 0;
+}
+
+.accordion-label {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+    background: #C11F50;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.accordion-label::after {
+    content: "\276F";
+    width: 16px;
+    height: 16px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.accordion-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    padding: 0 16px;
+    color: black;
+    background: #C11F50;
+}
+
+.accordion-content ul {
+    list-style-type: disc;
+    padding-left: 40px;
+    margin: 16px 0;
+}
+
+.accordion-content li {
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: white;
+    font-weight: 600;
+    font-family: poppins;
+}
+
+.accordion-checkbox {
+    display: none;
+}
+
+.accordion-checkbox:checked + .accordion-label + .accordion-content {
+    max-height: 1000px; /* large value to ensure it can contain the content */
+    padding: 16px;
+}
+
+.accordion-checkbox:checked + .accordion-label::after {
+    transform: rotate(90deg);
+}
+
+.accordion-label {
+    background: white;
+    color: black;
+    font-size: 13px;
+    font-family: poppins;
+    font-weight: 700;
+
+}
+
+/* chartsession */
+
+.heading {
+    font-family: 'Poppins', sans-serif;
+    font-size: 21px;
+    font-weight: 500;
+}
+
 .poppins-medium {
     font-family: "Poppins", sans-serif;
     font-style: normal;
 }
+
 .inter {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -12,112 +132,282 @@
     font-style: normal;
     font-variation-settings: "slnt" 10;
 }
+
 .wordspace {
     font-size: 22px;
     letter-spacing: 1px;
     margin-top: 10px;
 }
+
 .poppins-semibold {
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
-
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
-}
-
-.main-container {
-    width: 92%;
-    margin: 0 auto;
-}
-
-.content-container {
+.home-icon{
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
+    align-items: center;
+}
+.home-text{
+    font-size: 16px;
+    font-weight: 500;
+    font-family: poppins;
+    color: #C11F50;
+}
+.earning-text{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: poppins;
+    margin-bottom: -19px;
+}
+.line{
+    width:17%;
+    height:5px;
+   
+   background-color: #C11F50;
+    margin-bottom:20px
+}
+.earning-money{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 20px;
 }
-.heading {
-    font-family: 'Poppins', sans-serif;
-    font-size: 21px;
-    font-weight: 500;
+
+.life-time {
+    display: flex;
+    align-items: center;
+   
+    
 }
 
-.heading span {
-    color: #9A3452;
-}
-/* tab */
-.tab-container {
+.circle-container {
+    /* position: relative; */
+    width: 123.79px;
+    height: 123.79px;
+    border-radius: 50%;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border:4px solid #C11F50;
 }
 
-.tab-buttons {
+.circle-container img {
+   
+    object-fit: cover;
+}
+
+.small-circle {
+    position: absolute;
+    bottom: 10px; /* Adjust position as needed */
+    right: 10px; /* Adjust position as needed */
+    width: 5px;
+    height: 5px;
+    background-color: #C11F50;
+    border-radius: 50%;
+}
+.life-time-box{
+    width: 203px;
+    background-color: rgba(244, 243, 243, 1);
+    padding: 10px;
+
+}
+
+.event_bar_container{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 20px;
-    
+    align-items:start;
+    width: 100%;
+    gap: 30px;
+    margin: 15px 0px;
+}
+.bar-text{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: poppins;
+    margin-bottom: -19px;
+}
+.event-text{
+    font-size: 22px;
+    font-weight: 500;
+    font-family: poppins;
+    margin-bottom: -19px;
 }
 
-.tab-buttons button {
-    flex: 1;
-    padding: 10px;
-    border-right: 1px solid rgba(234, 236, 240, 1);
-    
-    
-    /* background: #fff; */
-    cursor: pointer;
-  
+.linep{
+    width:16%;
+    height:5px;
+   
+   background-color: #C11F50;
+    margin-bottom:65px
 }
 
-.tab-content {
-    display: none;
+.lineq{
+    width:12%;
+    height:5px;
+   
+   background-color: #C11F50;
+    margin-bottom:20px
+}
+.event-container{
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    width: 50%;
     padding: 10px;
-    border: 1px solid rgba(234, 236, 240, 1);
+}
+
+/* bar chart */
+
+.bar_container {
+    position: relative;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    width: 50%;
+}
+
+.active,
+.past,
+.active_event,
+.draft,
+.sponsor,
+.bookmarked {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+.active, .active_event, .sponsor {
+    background: rgba(244, 243, 243, 0.7);
+}
+
+.count-store {
+    padding: 12px 15px;
+    background-color: #C11F50;
+    color: white;
+}
+
+.barline {
+    width: 100%;
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2); /* Adjust opacity value as needed */
+    margin-bottom: 65px; /* Adjust the gap between each barline */
+}
+
+/* bar chart */
+
+.chart-progress {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1; /* Ensure it's above chart-line */
+    height: 329px;
+}
+
+.chart-progress > div {
+    width: calc(50% - 10px); /* Adjust width based on desired layout */
+    padding: 10px;
+    text-align: center;
     border-radius: 8px;
 }
 
-.tab-content.active {
-    display: block;
+.chart-progress > div > div:first-child {
+    width: 32px;
+    height: auto; /* Adjust height based on content */
+    margin: 0 auto;
+    box-sizing: border-box;
 }
 
-table {
+.chart-progress > div > div:last-child {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+}
+
+.chart-line {
+    position: absolute;
+    top: 21%; /* Adjust this value to position it correctly */
+    left: 0;
     width: 100%;
-    border-collapse: collapse;
+    z-index: 0; /* Ensure it's below chart-progress */
 }
 
-table th, table td {
-    border: 1px solid rgba(234, 236, 240, 1);
-    padding: 10px;
-    text-align: left;
+@media (max-width: 600px) {
+    .chart-progress > div {
+        width: 100%;
+    }
 }
 
-table th {
-    background: #f2f2f2;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+/* Responsive Design */
+
+@media (max-width: 1200px) {
+    .accordion-wrapper {
+        flex: 0 0 25%;
+    }
+
+    .chart-session {
+        flex: 0 0 75%;
+    }
 }
 
-.edit-button {
-    background: #C11F50;
-    color: #fff;
-    border: none;
-    padding: 5px 10px;
-    cursor: pointer;
-    border-radius: 4px;
+@media (max-width: 992px) {
+    .accordion-wrapper {
+        flex: 0 0 30%;
+    }
+
+    .chart-session {
+        flex: 0 0 70%;
+    }
 }
 
 @media (max-width: 768px) {
-    .tab-buttons {
+    .event-dashboard-container {
         flex-direction: column;
     }
 
-    .tab-buttons button {
-        flex: none;
-        width: 100%;
-        margin-bottom: 10px;
-    }}
+    .accordion-wrapper {
+        flex: 0 0 100%;
+        margin-bottom: 20px; /* Space between the accordion and chart-session */
+    }
+
+    .chart-session {
+        flex: 0 0 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .accordion-label {
+        font-size: 18px;
+    }
+
+    .accordion-content li {
+        font-size: 14px;
+    }
+
+    .heading {
+        font-size: 18px;
+    }
+}
