@@ -1271,7 +1271,9 @@ h1 {
     justify-content: center;
     
 }
-
+.dashboard-link{
+    
+}
 .navigation-container {
     width: 100%;
     display: flex;
