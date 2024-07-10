@@ -16,7 +16,10 @@ body {
     box-sizing: border-box;
     flex-direction: row;
 }
-
+.no-underline {
+    text-decoration: none;
+    color: white;
+}
 .accordion-wrapper {
     flex: 0 0 20%;
    
@@ -115,7 +118,7 @@ body {
 /* chartsession */
 
 .heading {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif,'poppins';
     font-size: 21px;
     font-weight: 500;
 }
